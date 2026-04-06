@@ -1,4 +1,5 @@
-public class Ejercicio2 {}
+package unidad1;
+public class Ejercicio2 {
     public static void main(String[] args) {
 
         double precioCamiseta = 25;
@@ -17,4 +18,6 @@ public class Ejercicio2 {}
         System.out.println("Precio pantalón con descuento: $" + pantalonConDescuento);
         System.out.println("Precio segunda camiseta: $" + segundaCamiseta);
         System.out.println("Total a pagar: $" + total);
+    }
+
 }

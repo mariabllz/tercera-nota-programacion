@@ -24,12 +24,14 @@ public class parcial {
             clasificacion = "Desempeño aceptable" ;
         } else if (puntaje <= 89) {
             clasificacion = "Buen desempeño" ;
-        } else (puntaje <= 100) {
+        } else {
             clasificacion = "Desempeño sobresaliente" ;
         }
 
-        System.out.println("Nombre :"+ nombre);
-        System
+        System.out.println("Nombre: "+ nombre);
+        System.out.println("Documento: " + documento) ;
+        System.out.println("Puntaje: " + puntaje) ;
+        System.out.println("Clasificacón: " + clasificacion) ;
 
 
 

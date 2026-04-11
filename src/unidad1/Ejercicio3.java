@@ -1,16 +1,31 @@
 package unidad1;
+
+import java.util.Scanner;
+
 public class Ejercicio3 {
-     public static void main(String[] args) {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el primer número: ");
+        int numero1 = scanner.nextInt();
+        System.out.print("Ingrese el segundo número: ");
+        int numero2 = scanner.nextInt();
 
-        int dineroInicial = 1000;
-        int retiroSemanal = 200;
-        int semanas = 4;
+        int suma = numero1 + numero2;
+        int resta = numero1 - numero2;
+        int multiplicacion = numero1 * numero2;
+        int division = numero1 / numero2;
+        int modulo = numero1 % numero2;
 
-        int totalRetirado = retiroSemanal * semanas;
-        int dineroFinal = dineroInicial - totalRetirado;
+        System.out.println("Suma: " + suma);
+        System.out.println("Resta: " + resta);
+        System.out.println("Multiplicación: " + multiplicacion);
+        System.out.println("División: " + division);
+        System.out.println("Módulo: " + modulo);
 
-        System.out.println("Dinero inicial: $" + dineroInicial);
-        System.out.println("Total retirado en el mes: $" + totalRetirado);
-        System.out.println("Dinero restante: $" + dineroFinal);
+        scanner.close();
     }
 }
+
+
+    

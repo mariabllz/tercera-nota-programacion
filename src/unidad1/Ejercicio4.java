@@ -1,24 +1,23 @@
 package unidad1;
-import java.util.Scanner;
-
 public class Ejercicio4 {
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        double precioCamiseta = 25;
+        double precioPantalon = 30;
 
-        System.out.println("Ingrese el primer número:");
-        double num1 = entrada.nextDouble();
+        double descuento = 0.15;
 
-        System.out.println("Ingrese el segundo número:");
-        double num2 = entrada.nextDouble();
+        double camisetaConDescuento = precioCamiseta - (precioCamiseta * descuento);
+        double pantalonConDescuento = precioPantalon - (precioPantalon * descuento);
 
-        System.out.println("Ingrese el tercer número:");
-        double num3 = entrada.nextDouble();
+        double segundaCamiseta = camisetaConDescuento - (camisetaConDescuento * 0.05);
 
-        double media = (num1 + num2 + num3) / 3;
+        double total = camisetaConDescuento + pantalonConDescuento + segundaCamiseta;
 
-        System.out.println("La media es: " + media);
-
-        entrada.close();
+        System.out.println("Precio camiseta con descuento: $" + camisetaConDescuento);
+        System.out.println("Precio pantalón con descuento: $" + pantalonConDescuento);
+        System.out.println("Precio segunda camiseta: $" + segundaCamiseta);
+        System.out.println("Total a pagar: $" + total);
     }
+
 }
